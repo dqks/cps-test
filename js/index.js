@@ -14,7 +14,6 @@ button.addEventListener('click', () => {
     
 })
 
-
 const start = () => {
     if (interval) {
         return
