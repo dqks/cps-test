@@ -21,7 +21,6 @@ const start = () => {
     interval = setInterval(updateCountdown, 1000)
 }
 
-
 const updateCountdown = () => {
 time--
 timerSec.innerHTML = `${time}`
@@ -31,6 +30,8 @@ if (time < 0) {
         timerSec.style.visibility = "hidden";
     }
 }
+
+
 
 
 

@@ -41,8 +41,3 @@ mediumValue += penises[i]
 }
 input.placeholder = Math.round(mediumValue / penises.length)
 })
-
-
-
-
-

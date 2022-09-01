@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPS test</title>
+    <title>Timer</title>
     <link rel="stylesheet" href="style/style.css" type="text/css"/>
 </head>
-
 <body>
     <header>
         <div class="menu-wrapper">
@@ -30,19 +28,19 @@
                 </div>
             </div>
     </header>
-    </div>
-    <div class="wrapper">
-        <div class="result-wrapper">
-            <p class="result">77</p>
-        </div>
-        <div class="button">
-            <button class="cps-button">Кликай сюда</button>
-        </div>
-        <div class="timer-wrapper">
-            <p class="timer"></p>
+    <div class="timers-wrapper">
+        <div class="first-timer">
+            <span>Таймер</span>
+            <div class="first-timer-input-wrapper">
+                <input type="text" class="first-timer-input" onkeypress='validate(event)'  placeholder="вводи секунды доллбаеб">
+            </div>
+            <span class="first-timer-span">-</span>
+            <div class="first-timer-button-wrapper">
+                <input class="first-timer-button" type="submit" value="Запустить">
+            </div>
         </div>
     </div>
 </body>
-<script src="js/index.js"></script>
-
+<script src="Timers/firstTimer.js"></script>
+<script src="Timers/secondTimer.js"></script>
 </html>

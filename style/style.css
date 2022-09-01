@@ -147,3 +147,58 @@ h1 {
 .medium-value-button:hover {
     opacity: 0.5;
 }
+
+
+
+/*styles for 2 timers */
+.first-timer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.first-timer-button {
+    font-family : inherit;
+    color: purple;
+    background-color: rgb(28, 25, 25);
+    border: none;
+    width: 200px;
+    height: 100px;
+    font-size: 30px;
+    transition-duration: 0.4s;
+    border-radius: 10px;  
+    margin-top: 20px;
+}
+
+.first-timer-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.first-timer-button:active {
+transform: scale(0.9);
+}
+
+
+span {
+    color: purple;
+    font-size: 30px;
+}
+
+.first-timer-input {
+    color: white;
+    border: none;
+    border-bottom: 2px solid blueviolet;
+    box-sizing: border-box;
+    background: transparent;
+    width: 200px;
+    font-size: 15px;
+    outline: none;
+    padding: 15px 0 10px;
+    text-align: center;
+}
+
+.first-timer-span {
+    font-size: 40px;
+    margin-top: 20px;
+}
