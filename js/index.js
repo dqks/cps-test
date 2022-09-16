@@ -11,7 +11,6 @@ button.addEventListener('click', () => {
     if (time > 0 && time < 11) {
         clicks++
     }
-    
 })
 
 const start = () => {
@@ -67,3 +66,7 @@ if (time < 0) {
 //     interval = setInterval(updateCountdown, 1000)
 
 // }
+const array1 = [1, 2, 3, 4]
+const array2 = [5,6,7,8]
+
+const array = [array1, array2]

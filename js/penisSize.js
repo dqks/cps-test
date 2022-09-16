@@ -2,20 +2,20 @@ const input = document.querySelector('.size-input')
 const title = document.querySelector('.title')
 const button = document.querySelector('.button-submit')
 const mediumValueButton = document.querySelector('.medium-value-button')
-var mediumValue = 0;
 
-// const validate = (evt) => {
-//     var theEvent = evt || window.event;
-//     var key = theEvent.keyCode || theEvent.which;
-//     key = String.fromCharCode( key );
-//     var regex = /[0-9]|\./;
-//     if( !regex.test(key) ) {
-//     theEvent.returnValue = false;
-//     if(theEvent.preventDefault) theEvent.preventDefault();
-//     }
-// }
 
-var penises = []
+const validate = (evt) => {
+    var theEvent = evt || window.event;
+    var key = theEvent.keyCode || theEvent.which;
+    key = String.fromCharCode( key );
+    var regex = /[0-9]|\./;
+    if( !regex.test(key) ) {
+    theEvent.returnValue = false;
+    if(theEvent.preventDefault) theEvent.preventDefault();
+    }
+}
+
+let penises = []
 
 button.addEventListener('click', (evt) => {
     evt.preventDefault()
@@ -36,8 +36,6 @@ button.addEventListener('click', (evt) => {
 
 mediumValueButton.addEventListener('click', (evt) => {
 evt.preventDefault()
-for (var i = 0; i < penises.length; i++ ) {
-mediumValue += penises[i]
-}
+let mediumValue = penises.reduce((total, penise) => total + penise)
 input.placeholder = Math.round(mediumValue / penises.length)
 })
